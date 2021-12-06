@@ -346,17 +346,3 @@ map.on('pointermove', function(evt) {
 map.on('singleclick', function(evt) {
     onSingleClick(evt);
 });
-
-
-
-
-var attributionComplete = false;
-map.on("rendercomplete", function(evt) {
-    if (!attributionComplete) {
-        var attribution = document.getElementsByClassName('ol-attribution')[0];
-        var attributionList = attribution.getElementsByTagName('ul')[0];
-        var firstLayerAttribution = attributionList.getElementsByTagName('li')[0];
-        var qgis2webAttribution = document.createElement('li');
-        qgis2webAttribution.innerHTML = '<img src="images/logo.jpeg" alt="" width="200" >';
-            }
-})
