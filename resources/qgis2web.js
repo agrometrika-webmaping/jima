@@ -357,10 +357,6 @@ map.on("rendercomplete", function(evt) {
         var attributionList = attribution.getElementsByTagName('ul')[0];
         var firstLayerAttribution = attributionList.getElementsByTagName('li')[0];
         var qgis2webAttribution = document.createElement('li');
-        qgis2webAttribution.innerHTML = '<img src="images/logo.jpeg" width="200" >';
-        attributionList.insertBefore(qgis2webAttribution, firstLayerAttribution);
-        attributionList.insertBefore(olAttribution, firstLayerAttribution);
-        attributionList.insertBefore(qgisAttribution, firstLayerAttribution);
-        attributionComplete = true;
-    }
+        qgis2webAttribution.innerHTML = '<img src="images/logo.jpeg" alt="" width="200" >';
+            }
 })
